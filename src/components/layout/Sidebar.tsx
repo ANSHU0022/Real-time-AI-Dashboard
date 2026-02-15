@@ -71,7 +71,7 @@ export function Sidebar({ className }: SidebarProps) {
                   Company
                 </h2>
                 <p className="text-xs text-muted-foreground">
-                  Food Data AI
+                  Data AI
                 </p>
               </div>
             </div>
