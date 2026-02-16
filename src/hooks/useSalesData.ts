@@ -3,7 +3,8 @@ import { SaleRecord, DashboardFilters, KPIData } from '@/types/sales';
 import { dataCache } from '@/lib/dataCache';
 
 const SHEET_ID = '1v-imyFcNfNR-Mr6gH9vccr2QaQc7oLSUc7ozPLoGgxQ';
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=0`;
+const SHEET_GID = '643477074';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
 const CACHE_KEY = 'sales_data';
 
 export function useSalesData() {

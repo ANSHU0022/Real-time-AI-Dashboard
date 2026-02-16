@@ -2,12 +2,12 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { MarketingRecord, MarketingFilters, MarketingKPIData } from '@/types/marketing';
 import { dataCache } from '@/lib/dataCache';
 
-const SHEET_ID = '1VN0h_3JYu7GtoX2Gh3ZfgNxiOcNDRE5OkRrt81UiAUc';
+const SHEET_ID = '1v-imyFcNfNR-Mr6gH9vccr2QaQc7oLSUc7ozPLoGgxQ';
+const SHEET_GID = '872851567';
 const SHEET_URLS = [
-  'https://docs.google.com/spreadsheets/d/e/2PACX-1vQPr6XvQLcPbW0_TuR2jsOUx62LafM0zK-bi0TOGZbhtU07swp4Z6FcaLA9Z-GrTOPoyFqGhmZ-aHZi/pub?output=csv',
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=0`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=${SHEET_GID}`,
   `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&usp=sharing`
 ];
 const CACHE_KEY = 'marketing_data';

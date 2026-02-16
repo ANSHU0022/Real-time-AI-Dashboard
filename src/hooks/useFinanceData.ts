@@ -2,11 +2,12 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { FinanceRecord, FinanceFilters, FinanceKPIData } from '@/types/finance';
 import { dataCache } from '@/lib/dataCache';
 
-const SHEET_ID = '1CQLg1Fep3MNB_tidEXdOtj1VQNz5YXUT2zRSv5j1GHA';
+const SHEET_ID = '1v-imyFcNfNR-Mr6gH9vccr2QaQc7oLSUc7ozPLoGgxQ';
+const SHEET_GID = '1609851811';
 const SHEET_URLS = [
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=0`
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=${SHEET_GID}`
 ];
 const CACHE_KEY = 'finance_data';
 

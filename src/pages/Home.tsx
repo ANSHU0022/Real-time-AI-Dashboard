@@ -127,8 +127,8 @@ export default function Home() {
                   <Link to="/marketing">Explore the Platform</Link>
                 </Button>
               </div>
-              <div className="grid gap-4 sm:grid-cols-3">
-                <div className="subcard-tilt group rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="grid items-stretch gap-4 sm:grid-cols-3">
+                <div className="hero-feature-card group h-full rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                       <Activity className="h-5 w-5" />
@@ -136,7 +136,7 @@ export default function Home() {
                     <p className="text-sm font-semibold text-foreground">Real-time data</p>
                   </div>
                 </div>
-                <div className="subcard-tilt group rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div className="hero-feature-card group h-full rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                       <Bot className="h-5 w-5" />
@@ -144,7 +144,7 @@ export default function Home() {
                     <p className="text-sm font-semibold text-foreground">AI data assistant</p>
                   </div>
                 </div>
-                <div className="subcard-tilt group rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div className="hero-feature-card group h-full rounded-2xl border border-border/60 bg-card/80 p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                       <FileBarChart className="h-5 w-5" />

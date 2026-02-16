@@ -2,11 +2,12 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { HRRecord, HRFilters, HRKPIData } from '@/types/hr';
 import { dataCache } from '@/lib/dataCache';
 
-const SHEET_ID = '1G2pZPZKrDz7A9Ez04-ltEPE4mVEg4iWw1qyLrtricM4';
+const SHEET_ID = '1v-imyFcNfNR-Mr6gH9vccr2QaQc7oLSUc7ozPLoGgxQ';
+const SHEET_GID = '1844316831';
 const SHEET_URLS = [
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=0`,
-  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=0`
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`,
+  `https://docs.google.com/spreadsheets/d/${SHEET_ID}/pub?output=csv&gid=${SHEET_GID}`
 ];
 const CACHE_KEY = 'hr_data';
 
