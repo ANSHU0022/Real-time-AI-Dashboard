@@ -11,6 +11,7 @@ import Finance from "./pages/Finance";
 import HR from "./pages/HR";
 import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
+import AiChat from "./pages/AiChat";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/finance" element={<Finance />} />
           <Route path="/hr" element={<HR />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/ai-chat" element={<AiChat />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
