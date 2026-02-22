@@ -107,8 +107,15 @@ export default function Home() {
               </div>
               <div className="space-y-5">
                 <h1 className="-mt-2 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-                  Company-wide real-time analytics
-                  <span className="text-primary"> for every department</span>
+                  Department wide real-time analytics
+                  <span className="text-primary"> for </span>
+                  <span className="text-primary inline-block align-baseline dept-rotator-wrap">
+                    <span className="dept-rotator" style={{ "--i": 0 } as React.CSSProperties}>Sales</span>
+                    <span className="dept-rotator" style={{ "--i": 1 } as React.CSSProperties}>Marketing</span>
+                    <span className="dept-rotator" style={{ "--i": 2 } as React.CSSProperties}>Finance</span>
+                    <span className="dept-rotator" style={{ "--i": 3 } as React.CSSProperties}>Support</span>
+                    <span className="dept-rotator" style={{ "--i": 4 } as React.CSSProperties}>HR</span>
+                  </span>
                 </h1>
                 <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
                   Company unifies sales, marketing, finance, support, and HR into a multi
@@ -117,14 +124,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4">
-              <Button asChild size="lg" className="shadow-xl shadow-primary/20">
-                <Link to="/sales">
-                  Open Live Dashboards
+                <Button size="lg" className="shadow-xl shadow-primary/20">
+                  Ai Chatting
                   <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/marketing">Explore the Platform</Link>
+                </Button>
+                <Button variant="outline" size="lg">
+                  Report Make
                 </Button>
               </div>
               <div className="grid items-stretch gap-4 sm:grid-cols-3">

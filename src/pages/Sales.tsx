@@ -8,7 +8,6 @@ import { AgentLeaderboard } from '@/components/sales/AgentLeaderboard';
 import { SubscriptionPieChart, PaymentPieChart } from '@/components/sales/PieCharts';
 import { CalendarHeatmap } from '@/components/sales/CalendarHeatmap';
 import { DataTable } from '@/components/sales/DataTable';
-import ChartBot from '@/components/sales/ChartBot';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { 
   DollarSign,
@@ -234,8 +233,6 @@ export default function Sales() {
         </p>
       </footer>
 
-      {/* Chart Bot */}
-      <ChartBot />
     </DashboardLayout>
   );
 }

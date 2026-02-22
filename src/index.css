@@ -329,6 +329,47 @@
     box-shadow: 0 22px 34px -16px rgba(15, 23, 42, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.7);
   }
 
+  .dept-rotator-wrap {
+    position: relative;
+    display: inline-block;
+    height: 1em;
+    min-width: 8ch;
+    vertical-align: bottom;
+  }
+
+  .dept-rotator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: deptSwap 12.5s infinite;
+    animation-delay: calc(var(--i) * 2.5s);
+    white-space: nowrap;
+  }
+
+  @keyframes deptSwap {
+    0% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    6% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    26% {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  }
+
 
 
   .chart-container {
