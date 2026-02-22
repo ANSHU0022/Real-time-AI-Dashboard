@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Building2, MapPin, Mic, Plus, Send, Sparkles } from "lucide-react";
+import { BarChart3, Mic, Plus, Send, Sparkles, TrendingUp } from "lucide-react";
 import Header from "@/components/layout/Header";
 
 type ChatMessage = {
@@ -11,51 +11,51 @@ type ChatMessage = {
 
 const popularSpaces = [
   {
-    title: "Connaught Place Hub",
-    location: "CP, New Delhi",
-    tag: "Premium",
+    title: "Revenue Performance",
+    location: "Last 30 days",
+    tag: "Trend",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Nehru Place Tech",
-    location: "Nehru Place, Delhi",
-    tag: "Startup",
+    title: "Pipeline Health",
+    location: "This quarter",
+    tag: "Live",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Saket Business",
-    location: "Saket, New Delhi",
-    tag: "Premium",
+    title: "Customer Retention",
+    location: "Cohort view",
+    tag: "Insight",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=900&auto=format&fit=crop",
   },
   {
-    title: "Dwarka Workspace",
-    location: "Dwarka, Delhi",
-    tag: "Startup",
+    title: "Product Adoption",
+    location: "Feature usage",
+    tag: "Growth",
     image:
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=900&auto=format&fit=crop",
   },
 ];
 
 const quickActions = [
   {
-    title: "Find coworking spaces",
-    subtitle: "in Delhi NCR region",
+    title: "Summarize key KPIs",
+    subtitle: "Monthly revenue, churn, and CAC",
   },
   {
-    title: "GST Registration",
-    subtitle: "Complete registration",
+    title: "Year over year growth",
+    subtitle: "Compare this year vs last",
   },
   {
-    title: "Compare plans",
-    subtitle: "Find the best deal",
+    title: "Build a dashboard",
+    subtitle: "Growth by region and product",
   },
   {
-    title: "Business compliance",
-    subtitle: "Check requirements",
+    title: "Generate a report",
+    subtitle: "Executive summary with insights",
   },
 ];
 
@@ -198,13 +198,13 @@ export default function AiChat() {
               }`}
             >
               <div className="mx-auto mb-4 mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#fff6e5] shadow-[0_10px_22px_rgba(253,186,116,0.35)]">
-                <Building2 className="h-6 w-6 text-[#f59e0b]" />
+                <TrendingUp className="h-6 w-6 text-[#f59e0b]" />
               </div>
               <h1 className="text-xl font-semibold text-slate-900 md:text-2xl">
-                How can we help your business?
+                What do you want to analyze today?
               </h1>
               <p className="mt-2 text-sm text-slate-500">
-                Ask about coworking spaces, virtual offices, compliance, or compare plans instantly.
+                Ask anything about your data. Our AI can summarize, visualize, and generate reports.
               </p>
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {quickActions.map((item) => (
@@ -325,11 +325,11 @@ export default function AiChat() {
           <div className="rounded-2xl border border-[#e7edf6] bg-white p-5 shadow-[0_14px_36px_rgba(15,23,42,0.08)]">
             <div className="mb-4 flex items-center justify-between">
               <div>
-                <p className="text-sm font-semibold text-slate-900">Popular Spaces in Bangalore</p>
-                <p className="text-xs text-slate-400">Top coworking picks</p>
+                <p className="text-sm font-semibold text-slate-900">Data Quick Views</p>
+                <p className="text-xs text-slate-400">Live dashboards & insights</p>
               </div>
               <button className="text-xs font-semibold text-[#f59e0b] transition hover:text-[#d97706]">
-                View Map
+                View all
               </button>
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
@@ -351,7 +351,7 @@ export default function AiChat() {
                   <div className="space-y-1 p-3">
                     <p className="text-sm font-semibold text-slate-900">{space.title}</p>
                     <div className="flex items-center gap-1 text-xs text-slate-500">
-                      <MapPin className="h-3 w-3" />
+                      <BarChart3 className="h-3 w-3" />
                       {space.location}
                     </div>
                   </div>
@@ -363,9 +363,9 @@ export default function AiChat() {
           <div className="rounded-2xl border border-[#fdecc8] bg-[linear-gradient(140deg,#fff6e5_0%,#fff3da_45%,#fffaf0_100%)] p-5 shadow-[0_16px_36px_rgba(249,115,22,0.12)]">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-base font-semibold text-slate-900">Find Your Perfect Workspace</p>
+                <p className="text-base font-semibold text-slate-900">Last Month Recap</p>
                 <p className="mt-2 text-xs text-slate-600">
-                  Take our AI-powered quiz to discover workspaces tailored to your needs.
+                  Snapshot performance across revenue, pipeline, and retention.
                 </p>
               </div>
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#f59e0b] shadow-sm">
@@ -373,19 +373,19 @@ export default function AiChat() {
               </div>
             </div>
             <button className="mt-4 w-full rounded-xl bg-[#0f172a] py-2.5 text-sm font-semibold text-white transition hover:bg-[#111827]">
-              Take Workspace Quiz
+              View recap
             </button>
           </div>
 
           <div className="rounded-2xl border border-[#e7edf6] bg-white p-5 shadow-[0_12px_30px_rgba(15,23,42,0.06)]">
             <div className="flex items-center justify-between">
-              <p className="text-sm font-semibold text-slate-900">Get Inspired</p>
+              <p className="text-sm font-semibold text-slate-900">Analyst Playbooks</p>
               <button className="text-xs font-semibold text-[#f59e0b] transition hover:text-[#d97706]">
                 See all
               </button>
             </div>
             <div className="mt-4 space-y-3">
-              {["Workspace styles", "Neighborhood guides", "Budget calculators"].map((item) => (
+              {["Retention deep-dive", "Cohort performance", "Pipeline health"].map((item) => (
                 <div
                   key={item}
                   className="rounded-xl border border-[#edf1f7] bg-[#f8fafc] px-4 py-3 text-sm text-slate-700 transition hover:border-[#d9e4f2]"
